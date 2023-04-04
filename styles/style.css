@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/*General description of style issues"*/
+
+:root{
+    font-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body, html {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Maint container dispostion and space configuation*/
+
+.main-container{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    /*box shadow
+    box-shadow: 0 0 1rem hsla(0, 0%, 0%, 0.1);*/
+    margin-bottom: 2rem;
+}
+
+/*Header section, the total skills points*/
+
+header{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 0 0 30px 30px;
+    padding: 1rem 2.25rem;
+}
+
+header h3{
+    font-size: 1rem;
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+header section{
+    border-radius: 100%;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.score{
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+}
+
+header section span{
+    font-size: 1.25rem;
+    color: hsl(241, 100%, 89%);
+}
+
+
+header h1{
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+}
+
+header p{
+    font-size: .9rem;
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*Main section, the skills cards and points decoration*/
+
+main{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 1rem;
+}
+
+main h3{
+    font-size: 1.25rem;
+    color: hsl(0, 0%, 0%);
+    margin: 1rem 0rem;
+}
+
+main .card{
+    width: 100%;
+    height: 50px;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem hsla(0, 0%, 0%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+.card p{
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+
+.card .note{
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+
+/*button decoration*/
+main button{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    margin: 1rem 0rem;
+}
+
+/*button hover*/
+main button:hover{
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    transition: .5s;
+
+}
+
+.attribution{
+    font-size: .8rem;
+    color: hsl(0, 0%, 0%);
+    text-align: center;
+}
+
+
+/*Responsive design*/
+@media screen and (min-width: 465px){
+
+    :root{
+        font-size: 16px;
+    }
+
+    body, html{
+        height: 100vh;
+    }
+
+    /*Maint container dispostion and space configuation to row*/
+    .main-container {
+        height: fit-content;
+        flex-direction: row;
+        /*box shadow*/
+        box-shadow: 0 0 1rem hsla(0, 0%, 0%, 0.1);
+        border-radius: 30px;
+    }
+
+    header {
+        height: 100%;
+        border-radius: 30px;
+  
+    }
+    
+}
+
+@media screen and (max-width: 250px){
+
+    :root{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 100px){
+
+    :root{
+        font-size: 8px;
+    }
+    
+}
