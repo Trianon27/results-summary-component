@@ -49,17 +49,17 @@ header{
 }
 
 header h3{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: hsl(241, 100%, 89%);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     font-weight: 500;
 }
 
 header section{
     border-radius: 100%;
     background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    width: 8rem;
-    height: 8rem;
+    width: 12rem;
+    height: 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,15 +183,11 @@ main button:hover{
 
     header {
         height: 100%;
-        width: 90%;
+        width: 100%;
         border-radius: 30px;
   
     }
 
-    header h3{
-        margin-bottom: 5rem;
-
-    }
     
 }
 
